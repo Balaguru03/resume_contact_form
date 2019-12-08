@@ -8,7 +8,7 @@ const config = {
     port:process.env.PORT || 6500,
 
     // DB Config
-    db: 'mongodb://localhost:27017/resume',
+    db: process.env.MONGOLAB_URI || 'mongodb://localhost:27017/resume',
 
     // App Config
     urlPrefix: '/api'

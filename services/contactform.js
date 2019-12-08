@@ -1,6 +1,5 @@
 var Model = require('.././models/contactform'),
 
-    // NPM Modules
     bluebird = require('bluebird');
 
 module.exports.upsert = (query, record) => {
@@ -14,18 +13,4 @@ module.exports.upsert = (query, record) => {
         }
     })
     });
-    // return new bluebird((resolve, reject) => {
-        // Model.findOne(query)
-        //     .exec((err, docs) => {
-        //         if (err) {
-        //             reject(err);
-        //         } else {
-        //             if (docs) {
-        //                 resolve(docs);
-        //             } else {
-
-        //             }
-        //         }
-        //     });
-    // })
 };
